@@ -1,0 +1,127 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Compuwhiz</title>
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+
+	<header>
+		<img src="./img/logo2.png" id="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about us.html">About Us</a></li>
+				<li><a href="our services.html">Our Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<div id="header_contact_info">
+			<ul>
+				<li>Email: aidanmoconnor@gmail.com</li>
+				<li>Tel: 086-1798383</li>
+			</ul>
+		</div>
+	</header>
+
+
+	<div id="sliding_images">
+			<img src="./img/slidingImage1.jpg" id="slider">
+			<div class="sliding_images_caption" >
+				<h1 id="caption">NO FIX, NO FEE</h1>
+				<p id="subCaption">No charge for you if we are unable to repair</p>
+			</div>
+
+			<img src="./img/forward.png" id="forward" name="forward" onclick="nextImage()">
+			<img src="./img/backwards.png" id="backwards" name="backwards" onclick="prevImage()">
+	</div>
+
+
+
+	<div class="content">
+		<h1 style="text-align: center;" id="content_heading"><a>Services We Offer</a></h1>	
+		<div class="home_services">
+
+		<table style="width:960px"> 
+			<tr>				
+					<td><img src="./img/pc_vector.png"></td>
+					<td><img src="./img/laptop_vector.png"></td>
+					<td><img src="./img/recovery_vector.png"></td>
+			</tr>
+			<tr>
+					<td><h2>PC Repair</h2></td>
+					<td><h2>Laptop Repair</h2></td>
+					<td><h2>Data Recovery</h2></td>
+			</tr>
+			<tr>
+					<td style="vertical-align: top;"><p>We repair all makes & models of Desktop </br> Computers. Our services include:</p>
+						<ul>
+							<li>Security & Performance</li>
+							<li>Virus Removal</li>
+							<li>Replace broken parts</li>
+							<li>Troubleshoot software issues<br/><br/><br/></li>
+						</ul>
+					</td>
+
+					<td style="vertical-align: top;"><p>We repair all makes & models of Laptops
+						<br/>including Macbooks</p>
+						<ul>
+							<li>Laptop screen replacement</li>
+							<li>Laptop charging issues</li>
+							<li>Battery replacement</li>
+							<li>Software/Hardware repair</li>
+						</ul>
+					</td>
+
+					<td style="vertical-align: top;"><p>We specialise in Data Recovery. Our <br/>services include:<br/></p>
+						<ul>
+								<li>Backup important files</li>
+								<li>Recover information</li>
+								<li>Fix memory card issues</li>
+								<li>Hard drive repair</li>
+						</ul>
+					</td>
+			</tr>	
+			<tr>
+					<td><a href="our services.html"><span class="read_more">Read more</span></a></td>
+					<td><a href="our services.html"><span class="read_more">Read more</span></a></td>
+					<td><a href="our services.html"><span class="read_more">Read more</span></a></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+
+	<footer>
+		<div id="contact_info">
+			2014 All rights reserved &copy; CompuWhiz <br/>Address: College Rd, Castleisland, Co.Kerry <br/> Telephone: 0861798383 <br/> Email: aidanmoconnor@gmail.com
+		</div>
+		
+		<div id="social_media">
+			<li><a href="http://www.facebook.com/"><img src="./img/facebook.png"></a></li>
+			<li><a href="http://www.twitter.com/"><img src="./img/twitter.png"></a></li>
+			<li><a href="http://www.youtube.com/"><img src="./img/youtube.png"></a></li>
+			<li><a href="https://plus.google.com"><img src="./img/google+.png"></a></li>
+		</div>
+	</footer>
+
+<script type="text/javascript" src="javascript/myscript.js"></script>
+
+<script type="text/javascript">
+
+//an event handler for the load event of the browser window
+	window.onload = function()
+	{
+		// setInterval calls three functions in myscript.js - changeImage, changeCaption, changeSubCaption
+		// and evaluates it every 4 seconds
+		setInterval(changeImage,4000);
+		setInterval(changeCaption,4000);
+		setInterval(changeSubCaption,4000);
+	}	
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Compuwhiz</title>
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="javascript/myscript.js"></script>
+</head>
+<body>
+	<header>
+		<img src="./img/logo2.png" id="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about us.html">About Us</a></li>
+				<li><a href="our services.html">Our Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="header_contact_info">
+			<ul>
+				<li>Email: aidanmoconnor@gmail.com</li>
+				<li>Tel: 086-1798383</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="content_our_services">
+		<div class="our_services_elements">
+
+		<h1>Our Services</h1>
+		<p>At CompuWhiz, our team of professional technicians can fix all types of problems. We can arrange
+			to call to you for an onsite repair if necessary or you can call into our office. Our aim is to provide you
+			with great service at a low price. Our motto is:
+		</p>
+
+		<div class="no_fix_no_fee">
+			<div class="no_fix_no_fee_text">
+			<h2>"NO FIX, NO FEE"</h2>
+			<p>We also offer services such as outsourced IT support to small-medium sized buinesses. As most businesses cannot afford to hire a full-time IT technician, we can provide you with the support & technical skills required to have
+			you business up & running after a hardware or software problem.</p>
+			</div>
+			<img src="./img/no_fix.png">	
+		</div>
+
+
+		<img src="./img/quick_quote.png" onclick="calculateQuote()" id="quick_quote_logo">
+
+		<div id="quote_form">
+			<span id="close_form" onclick="closeQuoteForm()">[close]  X</span>
+			<h1>Get a Quick Quote</h1>
+			<h3>I need a quote for ....</h3>
+
+			<ul>
+				<li>Laptop Screen Repair<input type="checkbox" name="chk" id="chk" value="140" onclick="calculateQuote()"></li>
+				<li>Virus Removal<input type="checkbox" name="chk" id="chk" value="50" onclick="calculateQuote()"></li>
+				<li>Installation of Operating System<input type="checkbox" name="chk" id="chk"  value="50" onclick="calculateQuote()"></li>
+				<li>PC or Laptop Tune-Up<input type="checkbox" name="chk"  id="chk"  value="40" onclick="calculateQuote()"></li>
+				<li>iPhone Screen Repair<input type="checkbox" name="chk"  id="chk"  value="120" onclick="calculateQuote()"> </li>
+				<li>Data Recovery<input type="checkbox" name="chk"  id="chk"  value="60" onclick="calculateQuote()"></li>
+			</ul>
+
+			<div id="totalCost"></div>
+			<p>Please call us on 086-1798383 or send an email to aidanmoconnor@gmail.com if the service you desire is not available in the above list.</p>
+		</div>
+
+		<table style="width:960px">
+			<tr>
+				  <td style="width:480px"><h2>Hardware Repairs</h2></td>
+				  <td><h2>Software Repairs</h2></td>
+			</tr>
+			<tr>
+				  <td>
+				  	<ul>
+						<li>General Computer set-ups</li>
+						<li>Hardware installation</li>
+						<li>Hardrive repair</li>
+						<li>Upgrading parts</li>
+						<li>Ram installation</li>
+						<li>Laptop screen replacement</li>
+						<li>DVD drive installation/repair</li>
+						<li>Liquid damages repair</li>
+						<li>Broadband Setup</li>
+						<li>Wireless Networking</li>
+						<li>Printer help</li>
+					</ul>
+				</td>
+
+					<td style="vertical-align: top;">
+					  	<ul>
+							<li>Installation/Upgrade/Repair of OS - Windows, Mac, Linux</li>
+							<li>Email, Social Media, Skype setup</li>
+							<li>Virus/Spyware removal</li>
+							<li>Online Security Tools</li>
+							<li>Tune ups for slow computers</li>
+							<li>Internet problems</li>
+							<li>Booting problems, Blue screen errors</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td><h2>iPhone Repairs</h2></td>
+					<td><h2>Data Recovery</h2></td>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+							<li>Screen Repair</li>
+							<li>Battery Replacement</li>
+							<li>Back cover replacements</li>
+							<li>Jailbreaks</li>
+						</ul>
+					</td>
+						
+					<td style="vertical-align: top;">
+						<ul>
+							<li>Recover accidental deletion of files</li>
+							<li>Fix corrupted storage media</li>
+							<li>Offer affordable data backup solutions</li>
+						</ul>
+					</td>	
+				</tr>	
+			</table> 
+
+			<div class="faq">
+				<h2>FAQs</h2>
+
+				<h3 onclick="toggle_faq('faq1')">Q: Can you unlock a phone from any network?</h3>
+				<p id="faq1">Yes we can unlock a phone from any network</p>
+
+				<h3 onclick="toggle_faq('faq2')">Q: Will I lose all my data If I send for repair?</h3>
+				<p id="faq2">You will only loose your data if the hard drive for the device is faulty</p>
+
+				<h3 onclick="toggle_faq('faq3')">Q: Can you repair consoles such as PS3 or Xbox?</h3>
+				<p id="faq3">Yes we can repair consoles. Our most common services for these include YLOD or RLOD for PS3 & Xbox</p>
+
+				<h3 onclick="toggle_faq('faq4')">Q: Do you sell computer accessories or parts?</h3>
+				<p id="faq4">We can supply you with any accessories or parts however this may take between 2 - 10 business days</p>
+
+				<h3 onclick="toggle_faq('faq5')">Q: Do you repair screens for both Android & iPhone devices?</h3>
+				<p id="faq5">Yes we can repair screen to both Android & iPhone devices</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>	
+		<div id="contact_info">
+			2014 All rights reserved &copy; CompuWhiz <br/>Address: College Rd, Castleisland, Co.Kerry <br/> Telephone: 0861798383 <br/> Email: aidanmoconnor@gmail.com
+		</div>
+		
+		<div id="social_media">
+			<li><a href="http://www.facebook.com"><img src="./img/facebook.png"></a></li>
+			<li><a href="http://wwww.twitter.com"><img src="./img/twitter.png"></a></li>
+			<li><a href="http://www.youtube.com"><img src="./img/youtube.png"></a></li>
+			<li><a href="https://plus.google.com"><img src="./img/google+.png"></a></li>
+		</div>	
+	</footer>
+</body>
+</html>
